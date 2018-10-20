@@ -67,14 +67,14 @@ class Form extends React.Component {
         <label>
           <select value={value} onChange={handleChange}>
             <option value="lol">Pick your zodiac</option>
-            <option value="aires">Aires</option>
+            <option value="aries">Aries</option>
             <option value="taurus">Taurus</option>
             <option value="gemini">Gemini</option>
             <option value="cancer">Cancer</option>
             <option value="leo">Leo</option>
             <option value="virgo">Virgo</option>
             <option value="libra">Libra</option>
-            <option value="corpio">Scorpio</option>
+            <option value="scorpio">Scorpio</option>
             <option value="sagittarius">Sagittarius</option>
             <option value="capricorn">Capricorn</option>
             <option value="aquarius">Aquarius</option>
@@ -92,7 +92,7 @@ function DisplayHoroscopes(props) {
   let zodiacObject = {
     signs: {
       aries: {
-        quote: "Fight for what you believe in. Go for it! "
+        quote: "Fight for what you believe in. Go for it!"
       },
       taurus: {
         quote:
@@ -118,22 +118,22 @@ function DisplayHoroscopes(props) {
         quote:
           "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype."
       },
-      Scorpio: {
+      scorpio: {
         quote:
           "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)"
       },
-      Sagittaurius: {
+      sagittarius: {
         quote:
           "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable."
       },
-      Capricorn: {
+      capricorn: {
         quote:
           "Step up your confidence. Remember, you're the Queen of your hive."
       },
-      Aquarius: {
+      aquarius: {
         quote: "Surf board! It's time to escape reality, take the vacation."
       },
-      Pisces: {
+      pisces: {
         quote: "Get drunk in love. Baby all night."
       }
     }

@@ -92,7 +92,49 @@ function DisplayHoroscopes(props) {
   let zodiacObject = {
     signs: {
       aries: {
-        quote: "sdflkjsdlkfjsdljf"
+        quote: "Fight for what you believe in. Go for it! "
+      },
+      taurus: {
+        quote:
+          "Don't be jealous this month. What's worse lookin, lookin' jealous or crazy?"
+      },
+      gemini: {
+        quote:
+          "To all the small-minded people around: replacing you is so easy. Live in the present, ignore the hate, and take each day as it comes."
+      },
+      cancer: {
+        quote:
+          "Introduce yourself to some new things, and upgrade you. Let your deep roots grow."
+      },
+      leo: {
+        quote:
+          "With a beautiful mane, you're the lion. Be brave not aggressive. Be kind, not cold-hearted."
+      },
+      virgo: {
+        quote:
+          "Sky-high standards will get you far. Remember that a diva is a female version of a hustler."
+      },
+      libra: {
+        quote:
+          "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype."
+      },
+      Scorpio: {
+        quote:
+          "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)"
+      },
+      Sagittaurius: {
+        quote:
+          "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable."
+      },
+      Capricorn: {
+        quote:
+          "Step up your confidence. Remember, you're the Queen of your hive."
+      },
+      Aquarius: {
+        quote: "Surf board! It's time to escape reality, take the vacation."
+      },
+      Pisces: {
+        quote: "Get drunk in love. Baby all night."
       }
     }
   };

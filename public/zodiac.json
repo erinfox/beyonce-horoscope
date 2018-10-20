@@ -2,109 +2,61 @@
     {
         "sign": "Aires",
         "horoscope": "Fight for what you believe in. Go for it! ",
-        "startmonth": "March",
-        "endmonth":"April",
-        "startdate":"21",
-        "enddate":"19",
         "photo": ""
     },
     {
         "sign": "Taurus",
         "horoscope": "Don't be jealous this month. What's worse lookin, lookin' jealous or crazy?",
-        "startmonth": "April",
-        "endmonth":"May",
-        "startdate":"20",
-        "enddate":"20",
         "photo": ""
     },   
     {
         "sign": "Gemini",
         "horoscope": "To all the small-minded people around: replacing you is so easy. Live in the present, ignore the hate, and take each day as it comes.",
-        "startmonth": "May",
-        "endmonth":"June",
-        "startdate":"21",
-        "enddate":"20",
         "photo": ""
     },
     {
         "sign": "Cancer",
         "horoscope": "Introduce yourself to some new things, and upgrade you. Let your deep roots grow.",
-        "startmonth": "June",
-        "endmonth":"July",
-        "startdate":"21",
-        "enddate":"22",
         "photo": ""
     },
     {
         "sign": "Leo",
         "horoscope": "With a beautiful mane, you're the lion. Be brave not aggressive. Be kind, not cold-hearted.",
-        "startmonth": "July",
-        "endmonth":"August",
-        "startdate":"23",
-        "enddate":"22",
         "photo": ""
     },
     {
         "sign": "Virgo",
         "horoscope": "Sky-high standards will get you far. Remember that a diva is a female version of a hustler.",
-        "startmonth": "August",
-        "endmonth":"September",
-        "startdate":"23",
-        "enddate":"22",
         "photo": ""
     },
     {
         "sign": "Libra",
         "horoscope": "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype.",
-        "startmonth": "September",
-        "endmonth":"October",
-        "startdate":"23",
-        "enddate":"22",
         "photo": ""
     },
     {
         "sign": "Scorpio",
         "horoscope": "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)",
-        "startmonth": "October",
-        "endmonth":"November",
-        "startdate":"23",
-        "enddate":"21",
         "photo": ""
     },
     {
         "sign": "Sagittaurius",
         "horoscope": "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable.",
-        "startmonth": "November",
-        "endmonth":"December",
-        "startdate":"22",
-        "enddate":"21",
         "photo": ""
     },
     {
         "sign": "Capricorn",
         "horoscope": "Step up your confidence. Remember, you're the Queen of your hive.",
-        "startmonth": "December",
-        "endmonth":"January",
-        "startdate":"22",
-        "enddate":"19",
         "photo": ""
     },
     {
         "sign": "Aquarius",
         "horoscope": "Surf board! It's time to escape reality, take the vacation.",
-        "startmonth": "January",
-        "endmonth":"February",
-        "startdate":"20",
-        "enddate":"18",
         "photo": ""
     },
     {
         "sign": "Pisces",
-        "horoscope": "Get drunk in love. Baby all night.",
-        "startmonth": "February",
-        "endmonth":"March",
-        "startdate":"19",
-        "enddate":"20",        
+        "horoscope": "Get drunk in love. Baby all night.",       
         "photo": ""
     }
 ]

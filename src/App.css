@@ -1,3 +1,12 @@
+body{
+  background: url("./Beyonce.jpeg") no-repeat top right;
+  background-size:90%;
+  font-family: 'GFS Didot', serif;
+}
+.welcomeHeader{
+  color: #8f0070;
+}
+
 .App {
   text-align: center;
 }

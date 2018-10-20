@@ -1,69 +1,106 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 import "./App.css";
 
-//Beyonce Welcome Horoscope Form (JSX for welcome form goes here)
-// title + welcome text + select form + submit button
-function BeyWelcome(props) {
-  return (
-    <div className="welcome">
-      <h1 className="header">Beyonce Horoscope Placeholder</h1>
-      <div className="placeholder">Select Your Month and Day of Birth</div>
-    </div>
-  );
-}
-
-// once the subit is hit, call the data here
-//AJAX request to JSON data API endpoint, returns data
-function getHoroscopeData(zodiac) {
-  return fetch("../public/zodiac.json")
-    .then(response => {
-      console.log(response)
-      if (response.status === 200) {
-        return Promise.resolve(response.json());
-      } else {
-        return Promise.reject(new Error("error"));
-      }  
-    })
-    .then(data => {
-      console.log(data)
-      // for (var x in data){
-      //   console.log(data[x])
-      // }
-      //add code here for parsing through data
-      //for x in data
-      //loop through
-      //does zodiac match sign
-    })
-    .catch(error => {
-      console.warn(error);
-      return null;
-    });
-}
-
-// take data and return displayHoroscope
-
-//Horoscope view (JSX for horoscope goes here)
-function displayHoroscopes(props) {
-  return <div />;
-}
-
-//Horoscope component
-//everything is rendered here
 class Horoscope extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      horoscope: ""
+      isSubmitted: false,
+      value: ""
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleSubmit(event) {
+    console.log("this.handleSubmit");
+    event.preventDefault();
+    this.setState({ isSubmitted: true });
   }
 
-  //change UI based on state
-  render() {
-    return <BeyWelcome />;
-    //return displayHoroscopes
+  handleChange(event) {
+    console.log("this.handleChange");
+
+    this.setState({ value: event.target.value });
   }
+
+  render() {
+    return (
+      <BeyWelcome
+        isSubmitted={this.state.isSubmitted}
+        handleSubmit={this.handleSubmit}
+        handleChange={this.handleChange}
+        value={this.state.value}
+      />
+    );
+  }
+}
+
+function BeyWelcome(props) {
+  return (
+    <div className="welcome">
+      <h1 className="header">Beyonce Horoscope</h1>
+      <div className="placeholder">Select your zodiac sign</div>
+      <Form
+        handleChange={props.handleChange}
+        handleSubmit={props.handleSubmit}
+        value={props.value}
+      />
+      {props.isSubmitted && (
+        <p>
+          <DisplayHoroscopes value={props.value} />
+        </p>
+      )}
+    </div>
+  );
+}
+class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "Select your zodiac sign" };
+  }
+  render() {
+    const { handleChange, handleSubmit, value } = this.props;
+    return (
+      <form onSubmit={handleSubmit}>
+        <label>
+          <select value={value} onChange={handleChange}>
+            <option value="lol">Pick your zodiac</option>
+            <option value="aires">Aires</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="corpio">Scorpio</option>
+            <option value="sagittarius">Sagittarius</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+          </select>
+        </label>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+function DisplayHoroscopes(props) {
+  let zodiacObject = {
+    signs: {
+      aries: {
+        quote: "sdflkjsdlkfjsdljf"
+      }
+    }
+  };
+  return (
+    <div>
+      <p>{zodiacObject.signs[props.value].quote}</p>
+    </div>
+  );
 }
 
 export default Horoscope;

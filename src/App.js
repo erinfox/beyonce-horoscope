@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Horoscope from './Horoscope'
 import './App.css';
 
-class App extends Component {
-  render() {
-    return ();
-  }
-}
+const App = () => (
+  <div>
+    <Horoscope />
+  </div>
+)
 
 export default App;

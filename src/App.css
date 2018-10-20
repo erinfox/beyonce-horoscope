@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=GFS+Didot');
+
+@font-face {
+   font-family: 'GFS Didot';
+   font-style: normal;
+   font-weight: 400;
+   src:  url(https://fonts.googleapis.com/css?family=GFS+Didot);
+}
+
 body{
   background: url("./Beyonce.jpeg") no-repeat top right;
   background-size:90%;
   font-family: 'GFS Didot', serif;
 }
-.welcomeHeader{
+.welcome{
   color: #8f0070;
+  font-family: 'GFS Didot', serif;
+  padding: 50px;
 }
 
 .App {
@@ -17,6 +28,7 @@ body{
 }
 
 .App-header {
+  font-family: 'GFS Didot', serif;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;

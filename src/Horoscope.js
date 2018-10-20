@@ -40,8 +40,9 @@ class Horoscope extends Component {
 function BeyWelcome(props) {
   return (
     <div className="welcome">
-      <h1 className="header">Beyonce Horoscope</h1>
-      <div className="placeholder">Select your zodiac sign</div>
+      <h1 className="header" style={{fontSize: "40px"}}>What's your Beyonce Horoscope?</h1>
+      <div className="placeholder" style={{fontSize: "30px"}} >Select your zodiac sign</div>
+      <br /><br />
       <Form
         handleChange={props.handleChange}
         handleSubmit={props.handleSubmit}
@@ -66,7 +67,7 @@ class Form extends React.Component {
       <form onSubmit={handleSubmit}>
         <label>
           <select value={value} onChange={handleChange}>
-            <option value="lol">Pick your zodiac</option>
+            <option value="lol">Select...</option>
             <option value="aries">Aries</option>
             <option value="taurus">Taurus</option>
             <option value="gemini">Gemini</option>
@@ -139,8 +140,8 @@ function DisplayHoroscopes(props) {
     }
   };
   return (
-    <div>
-      <p>{zodiacObject.signs[props.value].quote}</p>
+    <div style={{width: "500px", height: "200px"}}>
+      <p style={{fontSize: "40px"}}>{zodiacObject.signs[props.value].quote}</p>
     </div>
   );
 }

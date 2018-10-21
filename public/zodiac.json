@@ -1,62 +1,49 @@
-[
-    {
-        "sign": "Aires",
-        "horoscope": "Fight for what you believe in. Go for it! ",
-        "photo": ""
-    },
-    {
-        "sign": "Taurus",
-        "horoscope": "Don't be jealous this month. What's worse lookin, lookin' jealous or crazy?",
-        "photo": ""
-    },   
-    {
-        "sign": "Gemini",
-        "horoscope": "To all the small-minded people around: replacing you is so easy. Live in the present, ignore the hate, and take each day as it comes.",
-        "photo": ""
-    },
-    {
-        "sign": "Cancer",
-        "horoscope": "Introduce yourself to some new things, and upgrade you. Let your deep roots grow.",
-        "photo": ""
-    },
-    {
-        "sign": "Leo",
-        "horoscope": "With a beautiful mane, you're the lion. Be brave not aggressive. Be kind, not cold-hearted.",
-        "photo": ""
-    },
-    {
-        "sign": "Virgo",
-        "horoscope": "Sky-high standards will get you far. Remember that a diva is a female version of a hustler.",
-        "photo": ""
-    },
-    {
-        "sign": "Libra",
-        "horoscope": "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype.",
-        "photo": ""
-    },
-    {
-        "sign": "Scorpio",
-        "horoscope": "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)",
-        "photo": ""
-    },
-    {
-        "sign": "Sagittaurius",
-        "horoscope": "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable.",
-        "photo": ""
-    },
-    {
-        "sign": "Capricorn",
-        "horoscope": "Step up your confidence. Remember, you're the Queen of your hive.",
-        "photo": ""
-    },
-    {
-        "sign": "Aquarius",
-        "horoscope": "Surf board! It's time to escape reality, take the vacation.",
-        "photo": ""
-    },
-    {
-        "sign": "Pisces",
-        "horoscope": "Get drunk in love. Baby all night.",       
-        "photo": ""
+{
+    signs: {
+        aries:  {
+            quote: "Fight for what you believe in. Go for it!"
+        },
+        taurus: {
+            quote:
+            "Don't be jealous this month. What's worse lookin, lookin' jealous or crazy?"
+        },
+        gemini: {
+            quote:
+            "To all the small-minded people around: replacing you is so easy. Live in the present, ignore the hate, and take each day as it comes."
+        },
+        cancer: {
+            quote:
+            "Introduce yourself to some new things, and upgrade you. Let your deep roots grow."
+        },
+        leo: {
+            quote:
+            "With a beautiful mane, you're the lion. Be brave not aggressive. Be kind, not cold-hearted."
+        },
+        virgo: {
+            quote:
+            "Sky-high standards will get you far. Remember that a diva is a female version of a hustler."
+        },
+        libra: {
+            quote:
+            "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype."
+        },
+        scorpio: {
+            quote:
+            "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)"
+        },
+        sagittarius: {
+            quote:
+            "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable."
+        },
+        capricorn: {
+            quote:
+            "Step up your confidence. Remember, you're the Queen of your hive."
+        },
+        aquarius: {
+            quote: "Surf board! It's time to escape reality, take the vacation."
+        },
+        pisces: {
+            quote: "Get drunk in love. Baby all night."
+        }
     }
-]
+}

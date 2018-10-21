@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import ReactDOM from "react-dom";
-
+// import "./zodiac.json";
 import "./App.css";
 
 class Horoscope extends Component {
@@ -50,7 +50,8 @@ function BeyWelcome(props) {
       />
       {props.isSubmitted && (
         <p>
-          <DisplayHoroscopes value={props.value} />
+          {/* <DisplayHoroscopes value={props.value} /> */}
+          <DisplayHoroscopes />
         </p>
       )}
     </div>
@@ -67,7 +68,7 @@ class Form extends React.Component {
       <form onSubmit={handleSubmit}>
         <label>
           <select value={value} onChange={handleChange}>
-            <option value="lol">Select...</option>
+            {/* <option value="lol">Select...</option> */}
             <option value="aries">Aries</option>
             <option value="taurus">Taurus</option>
             <option value="gemini">Gemini</option>
@@ -90,60 +91,78 @@ class Form extends React.Component {
 }
 
 function DisplayHoroscopes(props) {
-  let zodiacObject = {
-    signs: {
-      aries: {
-        quote: "Fight for what you believe in. Go for it!"
-      },
-      taurus: {
-        quote:
-          "Don't be jealous this month. What's worse lookin, lookin' jealous or crazy?"
-      },
-      gemini: {
-        quote:
-          "To all the small-minded people around: replacing you is so easy. Live in the present, ignore the hate, and take each day as it comes."
-      },
-      cancer: {
-        quote:
-          "Introduce yourself to some new things, and upgrade you. Let your deep roots grow."
-      },
-      leo: {
-        quote:
-          "With a beautiful mane, you're the lion. Be brave not aggressive. Be kind, not cold-hearted."
-      },
-      virgo: {
-        quote:
-          "Sky-high standards will get you far. Remember that a diva is a female version of a hustler."
-      },
-      libra: {
-        quote:
-          "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype."
-      },
-      scorpio: {
-        quote:
-          "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)"
-      },
-      sagittarius: {
-        quote:
-          "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable."
-      },
-      capricorn: {
-        quote:
-          "Step up your confidence. Remember, you're the Queen of your hive."
-      },
-      aquarius: {
-        quote: "Surf board! It's time to escape reality, take the vacation."
-      },
-      pisces: {
-        quote: "Get drunk in love. Baby all night."
-      }
-    }
-  };
-  return (
-    <div style={{width: "500px", height: "200px"}}>
-      <p style={{fontSize: "40px"}}>{zodiacObject.signs[props.value].quote}</p>
-    </div>
-  );
+
+  //  AJAX request to JSON data API endpoint
+  return fetch("..public/zodiac.json")
+  .then(response => {
+    console.log("this is response" + response)
+    return response
+  })
+  .then(function(myJson) {
+    console.log("here is myJson because the promise returned response" + myJson)
+  })
+  .catch((error) => {
+    console.warn(error)
+    return null;
+});
+
+  // let zodiacObject =  
+  // {
+  //   signs: {
+  //     aries: {
+  //       quote: "Fight for what you believe in. Go for it!"
+  //     },
+  //     taurus: {
+  //       quote:
+  //         "Don't be jealous this month. What's worse lookin, lookin' jealous or crazy?"
+  //     },
+  //     gemini: {
+  //       quote:
+  //         "To all the small-minded people around: replacing you is so easy. Live in the present, ignore the hate, and take each day as it comes."
+  //     },
+  //     cancer: {
+  //       quote:
+  //         "Introduce yourself to some new things, and upgrade you. Let your deep roots grow."
+  //     },
+  //     leo: {
+  //       quote:
+  //         "With a beautiful mane, you're the lion. Be brave not aggressive. Be kind, not cold-hearted."
+  //     },
+  //     virgo: {
+  //       quote:
+  //         "Sky-high standards will get you far. Remember that a diva is a female version of a hustler."
+  //     },
+  //     libra: {
+  //       quote:
+  //         "You're bigger than life. Get your name in the lights. You're the number one chick. I don't need no hype."
+  //     },
+  //     scorpio: {
+  //       quote:
+  //         "You're smart enough to make these millions, strong enough to bear the children, then get back to business. Who run the world? (You)"
+  //     },
+  //     sagittarius: {
+  //       quote:
+  //         "Did I mention? You need no permission. Don't pay him any attention. Remember that your value is irreplaceable."
+  //     },
+  //     capricorn: {
+  //       quote:
+  //         "Step up your confidence. Remember, you're the Queen of your hive."
+  //     },
+  //     aquarius: {
+  //       quote: "Surf board! It's time to escape reality, take the vacation."
+  //     },
+  //     pisces: {
+  //       quote: "Get drunk in love. Baby all night."
+  //     }
+  //   }
+  // };
+
+  // return (
+  //   <div><p>zodiac stuff here</p></div>
+  //   <div style={{width: "500px", height: "200px"}}>
+  //     <p style={{fontSize: "40px"}}>{zodiacObject.signs[props.value].quote}</p>
+  //   </div>
+  // );
 }
 
 export default Horoscope;

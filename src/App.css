@@ -1,30 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=GFS+Didot');
-
-@font-face {
-   font-family: 'GFS Didot';
-   font-style: normal;
-   font-weight: 400;
-   src:  url(https://fonts.googleapis.com/css?family=GFS+Didot);
-}
-
 body{
   background: url("./Beyonce.jpeg") no-repeat top right;
   background-size:90%;
-  font-family: 'GFS Didot', serif;
 }
 .welcome{
-  color: #8f0070;
-  font-family: 'GFS Didot', serif;
   padding: 50px;
 }
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
 }
 
 .App-header {
@@ -41,13 +24,4 @@ body{
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
